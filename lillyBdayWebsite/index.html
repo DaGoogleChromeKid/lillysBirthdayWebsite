@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1">
+    <title> lilly's 22nd Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Div is a container for elelments. -->
+    <div id = "mainPinScreen" class="pin-screen">
+        <!-- input allows the user to input text. 
+            password is an attribute of the input element type that hides the input of the field with dots.
+            You can change the class attribute to numbers or emails or daates or checkboxes.
+            pin value gives teh input a label or class for css -->
+        <input type="password" class="pin-value" readonly>
+
+        <hr class="pin-divider"> <!-- This is to make a lil divider between keyboard and input-->
+
+        <div class="pin-keyboard">
+            <button type="button" class="pin-keyboard-key">1</button>
+            <button type="button" class="pin-keyboard-key">2</button>
+            <button type="button" class="pin-keyboard-key">3</button>
+            <button type="button" class="pin-keyboard-key">4</button>
+            <button type="button" class="pin-keyboard-key">5</button>
+            <button type="button" class="pin-keyboard-key">6</button>
+            <button type="button" class="pin-keyboard-key">7</button>
+            <button type="button" class="pin-keyboard-key">8</button>
+            <button type="button" class="pin-keyboard-key">9</button>
+
+
+           <button type="button" class="pin-keyboard-key pin-keyboard-key--clear">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+
+            <button type="button" class="pin-keyboard-key">0</button>
+
+            <button type="button" class="pin-keyboard-key pin-keyboard-key--enter">
+            <!-- this icon thing we got from a website so this grabs the arrow logo from that application-->
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="topBox"> <h1>Hi Lilly! Please input your passcode </h1></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+

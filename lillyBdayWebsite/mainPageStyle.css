@@ -1,0 +1,817 @@
+body{
+  background-image: url("greenPattern2.jpg");
+    width: auto;
+    display: flex;
+    background-color: #fcf3e4;
+    min-height: 200vh;
+
+}
+
+.bigBox{
+  position: relative;
+  background-color: #fff6e3;
+  width: 100%;              /* scales with viewport width */
+  height: 10000px;            /* height adjusts to content */
+
+  margin: 7vh 19% auto 19%;      /* distance from borders: top, right , bottom, left */
+  border: 8px solid #5D8249;
+  padding: 5vw;            /* spacing from object to this object */
+  border-radius: 1vw;      /* scales border radius */
+  box-shadow: 0 0.5vw 2vw rgba(0,0,0,0.2);
+}
+
+.birthdayHeader{
+  position: absolute;
+  margin: 13vh 20% 100% 25%;      /* distance from borders: top, right , bottom, left */
+  height:108px;
+  width: 50%;
+
+  background-image: url("clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #5D8249;
+  border-radius: 30px;
+
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #5D8249;
+}
+
+.birthdayMessage {
+  position: absolute;
+  top: 32%;                
+  left: 50.5%;
+  transform: translateX(-50%); /* centers horizontally only */
+  width: 50%;
+  min-height: 200px;
+  background-color: #F5FFF0;
+  border: 3px solid #5D8249;
+
+  font-family: 'Indie Flower', cursive;
+  font-size: 2vw;
+  line-height: 1.4em;
+  text-align: center;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.voiceMemos {
+  position: absolute;
+  top: 80%;             /* distance from top of .bigBox or body */
+  left: 50.5%;            /* center horizontally */
+  transform: translateX(-50%);
+  
+  width: 50%;           /* scales with parent */
+  min-height: 150px;    /* ensures it is visible */
+  
+  background-image: url("catbanner.jpg"); /* different image if you want */
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #5D8249;
+
+
+  text-align: left;   /* move text to the left */
+  padding-left: 2vw;  /* optional spacing from the edge */
+  padding-top: 1vh;  
+  font-size: 1.5vw;
+  font-family: 'Indie Flower', cursive;
+  border-radius: 30px;
+}
+
+.voiceMemo1 {
+  position: absolute;
+  top: 105%;             /* slightly below .voiceMemos */
+  left: 65%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%); /* keeps it centered around the left point */
+  
+  box-sizing: border-box;
+  width: 22%;            /* size of the box */
+  min-height: 190px;     /* makes it visible */
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .2vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.voiceTitle1{
+  justify-content: center;
+  align-items: center;
+}
+
+.voiceDivider1 {
+  width: 80%;           /* how long the line is */
+  margin: .2em auto;  /* centers it horizontally */
+  border: 1px solid #5D8249; /* line color & thickness */
+}
+
+.voiceMemoLaura{
+  position: absolute;
+  top: 119%;             /* slightly below .voiceMemos */
+  left: 65%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%);
+}
+
+.voiceMemo2 {
+  position: absolute;
+  top: 105%;             /* slightly below .voiceMemos */
+  left: 36%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%); /* keeps it centered around the left point */
+  
+  box-sizing: border-box;
+  width: 22%;            /* size of the box */
+  min-height: 190px;     /* makes it visible */
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider2 {
+  width: 80%;           /* how long the line is */
+  margin: .1 auto 1em auto;  /* centers it horizontally */
+  border: 1px solid #5D8249; /* line color & thickness */
+}
+
+.voiceMemoMaddie{
+  position: absolute;
+  top: 119%;             /* slightly below .voiceMemos */
+  left: 36%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%);
+}
+
+.voiceMemo3 {
+  position: absolute;
+  top: 135%;             /* slightly below .voiceMemos */
+  left: 65%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%); /* keeps it centered around the left point */
+  
+  box-sizing: border-box;
+  width: 22%;            /* size of the box */
+  min-height: 190px;     /* makes it visible */
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider3 {
+  width: 80%;           /* how long the line is */
+  margin: .1 auto 1em auto;  /* centers it horizontally */
+  border: 1px solid #5D8249; /* line color & thickness */
+}
+
+.voiceMemoCharma{
+  position: absolute;
+  top: 149%;             /* slightly below .voiceMemos */
+  left: 65%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%);
+}
+
+.voiceMemo4 {
+  position: absolute;
+  top: 135%;             /* slightly below .voiceMemos */
+  left: 36%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%); /* keeps it centered around the left point */
+  
+  box-sizing: border-box;
+  width: 22%;            /* size of the box */
+  min-height: 190px;     /* makes it visible */
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider4 {
+  width: 80%;           /* how long the line is */
+  margin: .1 auto 1em auto;  /* centers it horizontally */
+  border: 1px solid #5D8249; /* line color & thickness */
+}
+
+.voiceMemoJosieM{
+  position: absolute;
+  top: 149%;             /* slightly below .voiceMemos */
+  left: 36%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo5 {
+  position: absolute;
+  top: 165%;             /* slightly below .voiceMemos */
+  left: 36%;             /* to the right of .voiceMemos */
+  transform: translateX(-50%); /* keeps it centered around the left point */
+  
+  box-sizing: border-box;
+  width: 22%;            /* size of the box */
+  min-height: 190px;     /* makes it visible */
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider5 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoIngrid{
+  position: absolute;
+  top: 179%;           
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo6 {
+  position: absolute;
+  top: 165%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider6 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoJosieF{
+  position: absolute;
+  top: 179%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo7 {
+  position: absolute;
+  top: 195%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider7 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoJamie{
+  position: absolute;
+  top: 209%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo8 {
+  position: absolute;
+  top: 195%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider8 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoNichole{
+  position: absolute;
+  top: 209%;            
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo9 {
+  position: absolute;
+  top: 225%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider9 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoMelody{
+  position: absolute;
+  top: 239%;            
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo10 {
+  position: absolute;
+  top: 225%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider10 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoBucky{
+  position: absolute;
+  top: 239%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo10 {
+  position: absolute;
+  top: 225%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider10 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoBucky{
+  position: absolute;
+  top: 239%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo11 {
+  position: absolute;
+  top: 255%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider11 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoCali{
+  position: absolute;
+  top: 269%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo12 {
+  position: absolute;
+  top: 284%;             
+  left: 65%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider12 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoKatherine{
+  position: absolute;
+  top: 298%;            
+  left: 65%;             
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo13 {
+  position: absolute;
+  top: 284%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider13 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoAlexa{
+  position: absolute;
+  top: 298%;            
+  left: 35%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo14 {
+  position: absolute;
+  top: 255%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider14 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoLaurel{
+  position: absolute;
+  top: 269%;            
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+
+.voiceMemo15 {
+  position: absolute;
+  top: 315%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider15 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoLily{
+  position: absolute;
+  top: 329%;            
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+.voiceMemo16 {
+  position: absolute;
+  top: 345%;             
+  left: 36%;             
+  transform: translateX(-50%); 
+  box-sizing: border-box;
+  width: 22%;           
+  min-height: 190px;     
+  background-color: #ffffff;
+  border: 3px solid #5D8249;
+  padding: .5vw;
+  font-size: 1.2vw;
+  font-family: 'Indie Flower', cursive;
+}
+
+.voiceDivider16 {
+  width: 80%;           
+  margin: .1 auto 1em auto;  
+  border: 1px solid #5D8249; 
+}
+
+.voiceMemoSam{
+  position: absolute;
+  top: 359%;            
+  left: 36%;             
+  transform: translateX(-50%);
+}
+
+.catBox{
+position: absolute;
+  background-color: rgba(235, 202, 124, 0.541);
+  width: 45%;              
+  height: 1000px;         
+
+  margin: 377vh 19% auto 22%;     
+  border: 8px solid rgb(230, 207, 3);
+  padding: 5vw;            
+  border-radius: 2vw;      
+  box-shadow: 0 0.5vw 2vw rgba(3, 2, 0, 0.2);
+}
+
+.cats{
+  position: absolute;
+  top: 382%;             
+  left: 50.5%;            
+  transform: translateX(-50%);
+  width: 50%;           
+  min-height: 200px;    
+  
+  background-image: url("gigi.jpg"); 
+  background-size: cover;
+  background-position: center;
+  border: 5px solid rgb(216, 187, 70);
+  border-radius: 30px;
+}
+
+.catsTitle {
+  position: relative;      
+  text-align: center;      
+  color: white;          
+  width: 100%;            
+  padding-right: 2vw;    
+  font-family: 'Indie Flower', cursive;
+  font-size: 3vw;          
+  left: 28%;
+}
+
+.cat1Image {
+  position: absolute;
+  top: 411%;         
+  left: 35%;          
+  transform: translateX(-50%); 
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgb(119, 172, 111, 0.727);
+}
+
+.cat2Image {
+  position: absolute;
+  top: 417%;          /* distance from parent or header */
+  left: 50%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgb(119, 172, 111, 0.727);
+}
+
+.cat3Image {
+  position: absolute;
+  top: 410%;          /* distance from parent or header */
+  left: 66%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+
+.cat4Image {
+  position: absolute;
+  top: 445%;          /* distance from parent or header */
+  left: 50%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+
+
+.cat5Image {
+  position: absolute;
+  top: 435%;          /* distance from parent or header */
+  left: 69%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+
+.cat6Image {
+  position: absolute;
+  top: 455%;          /* distance from parent or header */
+  left: 33%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 13%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+
+.cat8Image {
+  position: absolute;
+  top: 490%;          /* distance from parent or header */
+  left: 49%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 15%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+.cat9Image {
+  position: absolute;
+  top: 475%;          /* distance from parent or header */
+  left: 67%;          /* horizontal center */
+  transform: translateX(-50%); /* center horizontally */
+  width: 15%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 30;
+  border:  5px solid rgba(119, 172, 111, 0.727);
+}
+
+
+.bdayBox{
+position: absolute;
+  background-color: rgba(235, 202, 124, 0.541);
+  width: 44.5%;              
+  height: 580px;         
+
+  margin: 540vh 19% auto 22%;     
+  border: 8px solid rgb(230, 207, 3);
+  padding: 5vw;            
+  border-radius: 2vw;      
+  box-shadow: 0 0.5vw 2vw rgba(3, 2, 0, 0.2);
+}
+
+.duck{
+  position: absolute;
+  top: 545%;             
+  left: 50%;            
+  transform: translateX(-50%);
+  width: 40%;           
+  min-height: 100px;    
+  
+  background-image: url("duck2.jpg"); 
+  background-size: cover;
+  background-position: center;
+  border: 5px solid rgb(216, 187, 70);
+  border-radius: 30px;
+}
+
+.bdayTitle {
+  position: relative;      
+  text-align: center;     
+  color: white;          
+  width: 100%;            
+  padding-right: 2vw;    
+  font-family: 'Indie Flower', cursive;
+  font-size: 3vw;          
+  left: 1%;
+  margin-top: 10%;
+
+}
+
+.slider{
+  position: absolute;
+  width: 20%;
+  Top: 575%;
+  Left: 40%;
+  margin: auto; /*Centers everything horizontally*/
+  overflow: hidden; /*If images are really big*/
+}
+
+.slider img{
+  width: 100%;
+  display:none;
+}
+
+/*Select all image elements that have a class in their class list of img*/
+img.displaySlide{
+  display: block;
+}
+
+.slider button{
+    position: absolute;
+    /* These buttons will be at the yaxis at 50% the middel*/
+    top: 50%; 
+    /*Translate y will move the elements up by 50 percent of the elements height*/
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 5px 5px;
+    background-color: rgb(220, 220, 220);
+    color: rgb(193, 112, 13);
+    border: none;
+    cursor: pointer;
+}
+
+.previous{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
